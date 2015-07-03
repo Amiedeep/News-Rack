@@ -1,0 +1,7 @@
+
+
+<%= form_tag("/news_path", method: "get") do %>
+<%= text_field_tag 'search_keyword', nil,  size: 100, auto_focus: true %>
+<%= submit_tag 'Search news'  %>
+<%end%>
+
