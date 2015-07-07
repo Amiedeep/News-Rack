@@ -23,7 +23,7 @@ class NewsController < ApplicationController
   def find_keyword_in_feed(entry)
     keyword=params[:search_keyword]
     @news_entries << entry unless entry.title.index(keyword).nil?
-    require'pry';binding.pry
+    # require'pry';binding.pry
   end
 
 end
