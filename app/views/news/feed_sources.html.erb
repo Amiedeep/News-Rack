@@ -1,0 +1,12 @@
+
+ <% if @news_entries.empty?%>
+     <h3 style="color: red" >Sorry! no news related to this keyword</h3>
+ <% end %>
+<% @news_entries.each do |entry| %>
+   <h2 style="color: blue" >
+     <a href=<%= entry.url %> >
+       <%= entry.title %>
+     </a>
+   </h2>
+   <%= raw entry.summary %>
+<% end %>

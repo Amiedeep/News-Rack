@@ -7,10 +7,12 @@ class NewsController < ApplicationController
     @english_news= NewsSource.where(language: 'English')
     @news_entries=[]
     @english_news.each do |news_rss|
+      # require'pry';binding.pry
       # feed = Feedjira::Feed.fetch_and_parse('http://www.bhaskar.com/rss-feed/2322/')
       feed = Feedjira::Feed.fetch_and_parse(news_rss.rss_url)
       parse_feed(feed)
     end
+    # require'pry';binding.pry
   end
 
 
