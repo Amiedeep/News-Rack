@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'home#start'
 
   # get '/news_path/:search_keyword' => 'news#index'
-  get '/news_path' => 'news#index'
+  get '/news_path' => 'news#feed_sources'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

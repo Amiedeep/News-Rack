@@ -1,7 +1,7 @@
 # require 'feedzirra/version'
-require 'open-uri'
-require 'rss'
-require 'rss/parser'
+# require 'open-uri'
+# require 'rss'
+# require 'rss/parser'
 # require 'feedzirra'
 require 'feedjira'
 class HomeController < ApplicationController
